@@ -10,7 +10,9 @@ namespace EmployeeWageComputationProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Employee Wage Computation Program\n");
+          EmployeeWageProgram employeeWageProgram = new EmployeeWageProgram();
+            employeeWageProgram.Attendence();
+
         }
     }
 }
