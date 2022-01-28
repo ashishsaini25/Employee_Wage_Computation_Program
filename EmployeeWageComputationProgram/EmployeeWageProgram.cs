@@ -15,11 +15,11 @@ namespace EmployeeWageComputationProgram
             int check = random.Next(0, 2);
             if (check == PRESENT)
             {
-                Console.WriteLine("Employee is Present\n");
+                Console.WriteLine("Employee is Present \n");
             }
             if (check == ABSENT)
             {
-                Console.WriteLine("Employee is Absent\n");
+                Console.WriteLine("Employee is Absent \n");
             }
 
         }

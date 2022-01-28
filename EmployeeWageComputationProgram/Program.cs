@@ -10,8 +10,8 @@ namespace EmployeeWageComputationProgram
     {
         static void Main(string[] args)
         {
-          EmployeeWageProgram employeeWageProgram = new EmployeeWageProgram();
-            employeeWageProgram.Attendence();
+          EmployeeWageProgram employee = new EmployeeWageProgram();
+            employee.Attendence();
 
         }
     }
