@@ -14,17 +14,17 @@ namespace EmployeeWageComputationProgram
             int dailywage = 0;
             Random random = new Random();
             int check = random.Next(0, 3);
-            if (check == PART_TIME)
+            switch (check)
             {
-                dailywage += WAGE_PER_HOUR * PART_TIME_HOUR;
-            }
-            if (check == FULL_TIME)
-            {
-                dailywage += WAGE_PER_HOUR * FULL_DAY_HOUR;
-            }
-            if (check == ABSENT)
-            {
-                dailywage = 0;
+                case PART_TIME:
+                    dailywage += WAGE_PER_HOUR * PART_TIME_HOUR;
+                    break;
+                case FULL_TIME:
+                    dailywage += WAGE_PER_HOUR * FULL_DAY_HOUR;
+                    break;
+                default:
+                    dailywage = 0;
+                    break;
             }
 
             Console.WriteLine("The today Wage Of the Employee is :{0}", dailywage);
